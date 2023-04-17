@@ -18,7 +18,7 @@ class DanhMucController extends Controller
     }
     public function store(Request $request)
     {
-        $sql1 = "SELECT * FROM `danh_mucs` where `id_danh_muc_cha` = '" . $request->ma_danh_muc . "'";
+        $sql1 = "SELECT * FROM `danh_mucs` where `ma_danh_muc` = '" . $request->ma_danh_muc . "'";
         $danhmucCha = DB::select($sql1);
         if (count($danhmucCha) > 0) {
             toastr()->error('Mã danh mục đã tồn tại');
