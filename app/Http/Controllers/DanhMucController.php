@@ -40,4 +40,14 @@ class DanhMucController extends Controller
         return redirect('/adminlte/danh-muc');
         // dd($request->all());
     }
+
+    public function edit($id)
+    {
+        $sql = "SELECT * FROM `danh_mucs` where id = " . $id;
+        $data = DB::select($sql);
+        // dd($data);
+        $sql2 = "SELECT * FROM `danh_mucs` where `id_danh_muc_cha` = 0";
+        $data2 = DB::select($sql2);
+        return view('adminlte.page.danh_muc.edit', compact('data', 'data2'));
+    }
 }

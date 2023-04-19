@@ -17,7 +17,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="/adminlte/plugins/fontawesome-free/css/all.min.css">
     <!-- Theme style -->
     <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
-    @toastr_css
 </head>
 
 <body class="hold-transition sidebar-mini">
@@ -298,6 +297,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- ./wrapper -->
 
     <!-- REQUIRED SCRIPTS -->
+    @toastr_css
     @jquery
     @toastr_js
     @toastr_render

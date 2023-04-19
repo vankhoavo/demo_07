@@ -90,7 +90,8 @@
                                 </td>
                                 <td class="align-middle text-center">{{ $value->created_at }}</td>
                                 <td class="align-middle text-center">
-                                    <button class="btn btn-info">Cập Nhật</button>
+                                    {{-- <button class="btn btn-info">Cập Nhật</button> --}}
+                                    <a href="/adminlte/danh-muc/edit/{{ $value->id }}" class="btn btn-info">Cập Nhật</a>
                                     <button class="btn btn-danger">Xoá</button>
                                 </td>
                             </tr>
