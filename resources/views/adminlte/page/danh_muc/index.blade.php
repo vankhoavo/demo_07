@@ -92,7 +92,7 @@
                                 <td class="align-middle text-center">
                                     {{-- <button class="btn btn-info">Cập Nhật</button> --}}
                                     <a href="/adminlte/danh-muc/edit/{{ $value->id }}" class="btn btn-info">Cập Nhật</a>
-                                    <button class="btn btn-danger">Xoá</button>
+                                    <a href="/adminlte/danh-muc/delete/{{ $value->id }}" class="btn btn-danger">Xoá</a>
                                 </td>
                             </tr>
                         @endforeach

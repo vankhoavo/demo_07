@@ -22,6 +22,8 @@ Route::post('/tinhBMI', [BMIController::class, 'haytinhBMI']);
 Route::get('/adminlte/danh-muc', [DanhMucController::class, 'index']);
 Route::post('/adminlte/danh-muc', [DanhMucController::class, 'store']);
 Route::get('/adminlte/danh-muc/edit/{id}', [DanhMucController::class, 'edit']);
+Route::post('/adminlte/danh-muc/update', [DanhMucController::class, 'update']);
+Route::get('/adminlte/danh-muc/delete/{id}', [DanhMucController::class, 'delete']);
 
 Route::get('/adminlte/nha-cung-cap', [NhaCungCapController::class, 'index']);
 Route::post('/adminlte/nha-cung-cap', [NhaCungCapController::class, 'store']);
