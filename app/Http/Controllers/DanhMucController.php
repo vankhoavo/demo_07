@@ -9,7 +9,6 @@ class DanhMucController extends Controller
 {
     public function index()
     {
-        toastr()->success('Chào mừng bạn đã đến với Trang Danh Mục');
         $sql = "SELECT danh_mucs.*, B.ten_danh_muc as ten_danh_muc_cha FROM `danh_mucs` left join `danh_mucs` as B on `danh_mucs`.`id_danh_muc_cha` = B.id";
         $data = DB::select($sql);
         $sql2 = "SELECT * FROM `danh_mucs` WHERE `id_danh_muc_cha` = 0";

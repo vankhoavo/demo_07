@@ -6,6 +6,7 @@ use App\Http\Controllers\BMIController;
 use App\Http\Controllers\TestController;
 use App\Http\Controllers\DanhMucController;
 use App\Http\Controllers\NhaCungCapController;
+use App\Http\Controllers\SanPhamController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomePageController::class, 'view']);
@@ -27,3 +28,6 @@ Route::get('/adminlte/danh-muc/delete/{id}', [DanhMucController::class, 'delete'
 
 Route::get('/adminlte/nha-cung-cap', [NhaCungCapController::class, 'index']);
 Route::post('/adminlte/nha-cung-cap', [NhaCungCapController::class, 'store']);
+
+Route::get('/adminlte/san-pham', [SanPhamController::class, 'index']);
+Route::post('/adminlte/san-pham', [SanPhamController::class, 'store']);
